@@ -139,7 +139,6 @@ struct ContentView: View {
         List {
                 switch  currentScreen{
                     case .Login:
-                        titleText
                         sectionInputField("User ID", binding: $userId)
                         sectionInputField("API Key", binding: $apiKey)
                         loginButton
@@ -309,10 +308,6 @@ struct ContentView: View {
         .toast(message: toastMessage ?? "",
                isShowing: $showToast,
                config: toastConfig)
-    }
-
-    var titleText: some View {
-        Text("iOS Programmable Wallet").font(.title2)
     }
 
     var versionText: some View {
