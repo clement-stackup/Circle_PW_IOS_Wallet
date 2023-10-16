@@ -312,7 +312,7 @@ struct ContentView: View {
     }
 
     var titleText: some View {
-        Text("iOS Programmable Wallet\nPowered by Circle").font(.title2)
+        Text("iOS Programmable Wallet").font(.title2)
     }
 
     var versionText: some View {
